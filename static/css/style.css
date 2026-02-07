@@ -1,0 +1,209 @@
+/* Global Body Styling with Animated Gradient Background */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(-45deg, #80d0c7, #13547a, #80d0c7, #13547a);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Keyframes for Gradient Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Headings with Fade-in Animation */
+h1, h2, h3 {
+    text-align: center;
+    color: #171d23;
+    font-weight: 600;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Container Styling for Form and Result Pages */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    animation: fadeInUp 1.5s ease-out;
+    backdrop-filter: blur(5px);
+}
+
+/* Input Fields with Hover and Focus Effects */
+.field {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.field:focus {
+    border-color: #4CAF50;
+    background-color: #f9fffc;
+    outline: none;
+}
+
+/* Image Styling for Form Page */
+.form-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* List Styling in Result Page */
+.result-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 18px;
+    animation: fadeIn 1s ease-out;
+}
+
+.result-box ul li:hover {
+    color: #4CAF50;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Diet Plan Table */
+.diet-plan-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.diet-plan-table th, .diet-plan-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+}
+
+.diet-plan-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+.diet-plan-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Sugar Range Information */
+.sugar-range {
+    font-size: 15px;
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+/* 5210 Rule List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+    text-align: left;
+    margin: 20px 0;
+}
+
+ul li {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Quotes Section */
+.quote {
+    font-style: italic;
+    color: #333;
+    font-size: 23px;
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+    animation: fadeInUp 1.2s ease-out;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #004c99;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Slide-up Animation */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Result Color Based on Severity */
+.positive {
+    color: #f1475e; /* Green for Positive */
+}
+
+.moderate {
+    color: #e8ed60; /* Yellow for Moderate */
+}
+
+.negative {
+    color: #9ff01c; /* Red for Negative */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1, h2, h3 {
+        font-size: 24px;
+    }
+
+    .field, .btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+.result-container h3 {
+    color: #333;
+}
